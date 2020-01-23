@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+     {% load static %}
+    <!--<link href="{% static 'CSS/style.css' %}" rel="stylesheet">-->
+    <script src="{% static '/js/script.js' %}" type="text/javascript"></script>
+
+</head>
+<body>
+<form method="POST"class="post-form"enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"class="save btn btn-default">Save</button>
+</form>
+<!--<button type="button"onclick="location.href='/mi'">MI</button>
+<a href="/mi" type="button">Click for me!</a>
+<button type="button"onclick="location.href='/oppo'">OPPO</button>
+<button type="button"onclick="location.href='/apple'">APPLE</button>
+
+<form action="/test" method="get">
+    Enter a number<input type="text" name="num">
+    <input type="submit" value="Test">
+     Enter second number<input type="text" name="num2">
+    <input type="submit" value="Test">
+</form>
+-->
+</body>
+</html>
