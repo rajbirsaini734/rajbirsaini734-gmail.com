@@ -30,5 +30,7 @@ urlpatterns = [
     path('apple/',views.apple),
     path('test/', views.test),
     path('login/',views.login),
+    path('signup/',views.signup),
+    path('pro/',views.pro),
 
 ]
