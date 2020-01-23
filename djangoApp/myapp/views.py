@@ -57,7 +57,7 @@ def test(request):
     html = "<html><body><h3>sum is is %s.</h3></body></html>" % z
 
     return HttpResponse(html)
-def index(request):
+def index4(request):
     if request.method=='POST':
         student=StudentFrom(request.POST,request.FILES)
         if student.is_valid():
@@ -66,3 +66,7 @@ def index(request):
     else:
             student=StudentFrom()
             return render(request,"index.html",{'form':student})
+def index(request):
+    return render(request,"index.html")
+def login(request):
+    return render(request,"login.html")

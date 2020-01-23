@@ -29,5 +29,6 @@ urlpatterns = [
     path('oppo/',views.oppo),
     path('apple/',views.apple),
     path('test/', views.test),
+    path('login/',views.login),
 
 ]
